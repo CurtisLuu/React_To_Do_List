@@ -1,0 +1,82 @@
+*{
+    font-family:'Courier New', Courier, monospace
+}
+body{
+    background-color: hsla(215, 55%, 30%, 0.288);
+}
+
+.new-item-list{
+    font-size: 2rem;
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.btn{
+    background-color: hsla(240, 45%, 42%, 0.256);
+    border-radius: 0.5rem;
+    border-width: 0;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;  
+  }
+
+.deletebtn{
+    color: red;
+    background-color: transparent;
+    border-color: red;
+    border-radius: 0.5rem;
+    margin: 5px;
+    font-size:1rem;
+}
+.wrapper{
+    max-width:30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.taskTitle{
+    text-align: center;
+    font-size: 2rem;
+}
+.toDoTitle{
+    text-align:center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: hsla(240, 45%, 42%, 0.543);
+}
+.inputBox{
+    border-radius: 0.5rem;
+    border-width: 0rem;
+    font-size: 1.5rem;
+    margin-top:5px;
+    text-align: center;
+    margin-top: 25px;
+}
+.list{
+    text-align: center;
+    font-size: 1.2rem;
+    color:hsla(240, 45%, 42%, 0.831);
+}
+ul {
+    text-align: center;
+    list-style-position: inside;
+    color: hsla(240, 45%, 42%, 0.543)
+}
+.btn:hover{
+    background-color: hsla(240, 45%, 42%, 0.2);
+}
+.deletebtn:hover{
+    color: hsl(0, 100%, 70%);
+    border-color: hsl(0, 100%, 70%);
+}
+@media(max-width: 700px){
+    .wrapper{
+        max-width: 50%;
+    }
+}
+.list li:has(input:checked){
+    color: hsla(240, 45%, 42%, 0.329);
+  }
